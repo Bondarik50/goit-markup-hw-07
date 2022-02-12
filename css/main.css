@@ -123,10 +123,14 @@ address {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
+  transition: color var(--transition);
 }
 
-.nav-list__link:hover,
-.nav-list__link:focus .link-current {
+.nav-list__link:hover, .nav-list__link:focus {
+  color: var(--accent-color);
+}
+
+.nav-list__link.link-current {
   color: var(--accent-color);
   position: relative;
 }
@@ -209,11 +213,6 @@ address {
   background-color: var(--btn-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .card-set__title {
   font-size: 14px;
   line-height: 1.14;
@@ -283,14 +282,6 @@ address {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--first-color);
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .team {
@@ -431,7 +422,7 @@ address {
   color: var(--other-color);
 }
 
-.footer .logo {
+.footer-logo__logo {
   margin-bottom: 20px;
 }
 

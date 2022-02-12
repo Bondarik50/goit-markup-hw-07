@@ -57,8 +57,12 @@
   padding-bottom: 32px;
   display: flex;
   align-items: center;
+  transition: color var(--transition);
   &:hover,
-  &:focus .link-current {
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.link-current {
     color: var(--accent-color);
     position: relative;
   }
