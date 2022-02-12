@@ -1,0 +1,21 @@
+.card-set__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--first-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-set__item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.hero-icons {
+  border-radius: 4px;
+  height: 120px;
+  background: var(--filters-color);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
