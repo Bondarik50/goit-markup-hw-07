@@ -58,6 +58,15 @@ address {
   color: inherit;
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo {
   font-family: "Raleway";
   font-size: 26px;
@@ -213,6 +222,32 @@ address {
   background-color: var(--btn-color);
 }
 
+.team-list__link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--other-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--icon-color);
+  background-color: var(--white-rgvn);
+}
+
+.team-list__link:hover, .team-list__link:focus {
+  background-color: #2196f3;
+  color: var(--other-color);
+}
+
+.team-list__link:hover + .social-icon,
+.team-list__link:focus + .social-icon {
+  fill: #ffffff;
+}
+
+.team-list__border-item {
+  margin-right: 10px;
+}
+
 .card-set__title {
   font-size: 14px;
   line-height: 1.14;
@@ -277,11 +312,18 @@ address {
   margin-bottom: 50px;
 }
 
-.pre-about__list {
+.card-set {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.team-list__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--other-color);
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .team {
@@ -318,41 +360,9 @@ address {
   fill: currentColor;
 }
 
-.team-list__link {
-  width: 44px;
-  height: 44px;
-  background-color: var(--other-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: var(--icon-color);
-  background-color: var(--white-rgvn);
-}
-
-.team-list__link:hover, .team-list__link:focus {
-  background-color: #2196f3;
-}
-
-.team-list__link:hover + .social-icon,
-.team-list__link:focus + .social-icon {
-  fill: #ffffff;
-}
-
 .team-list {
   display: flex;
   justify-content: center;
-}
-
-.team-list__item + .team-list__item {
-  margin-left: 10px;
-}
-
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .team-title {
@@ -403,13 +413,6 @@ address {
   color: var(--first-color);
   text-align: center;
   margin-bottom: 50px;
-}
-
-.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .footer {
@@ -727,8 +730,13 @@ address {
   padding: 6px 22px;
 }
 
-.filters-btn:hover,
-.filters-btn:focus .filters-current {
+.filters-btn:hover, .filters-btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--other-color);
+  background-color: var(--accent-color);
+}
+
+.filters-current {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--other-color);
   background-color: var(--accent-color);
@@ -820,5 +828,10 @@ address {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*# sourceMappingURL=main.css.map */

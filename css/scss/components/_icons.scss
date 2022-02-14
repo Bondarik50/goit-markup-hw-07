@@ -1,0 +1,24 @@
+.team-list__link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--other-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--icon-color);
+  background-color: var(--white-rgvn);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: var(--other-color);
+  }
+  &:hover + .social-icon,
+  &:focus + .social-icon {
+    fill: #ffffff;
+  }
+}
+
+.team-list__border-item {
+  margin-right: 10px;
+}
