@@ -39,7 +39,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  &:hover,
+  &:hover .modal-svg,
   &:focus .modal-svg {
     fill: var(--accent-color);
   }
@@ -73,7 +73,7 @@
   &:focus {
     border: 1px solid var(--accent-color);
   }
-  &:focus,
+  &:focus + .input-icon,
   &:hover + .input-icon {
     fill: var(--accent-color);
   }

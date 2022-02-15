@@ -8,9 +8,10 @@
   }
 }
 
-.content-item {
+.content-link {
   flex-basis: calc(100% / 3 - 30px);
-  &:hover .content-img-text {
+  &:hover .content-img-text,
+  &:focus .content-img-text {
     transform: translateY(0);
   }
 }
@@ -47,10 +48,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 63px;
-  padding-left: 24px;
+  padding: 63px 24px;
   font-size: 18px;
-  width: 322px;
+  width: 100%;
   line-height: calc(28 / 18);
 
   background-color: rgba(33, 150, 243, 0.9);
@@ -66,10 +66,4 @@
   height: 100%;
   top: 0;
   left: 0;
-}
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
